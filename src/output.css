@@ -554,15 +554,122 @@ video {
   --tw-contain-style:  ;
 }
 
-.text-3xl {
-  font-size: 1.875rem;
-  line-height: 2.25rem;
+.h-screen {
+  height: 100vh;
+}
+
+.h-9 {
+  height: 2.25rem;
+}
+
+.h-\[200px\] {
+  height: 200px;
+}
+
+.h-\[100px\] {
+  height: 100px;
+}
+
+.w-9 {
+  width: 2.25rem;
+}
+
+.w-\[\] {
+  width: ;
+}
+
+.w-\[200px\] {
+  width: 200px;
+}
+
+.w-\[100px\] {
+  width: 100px;
+}
+
+.rounded-full {
+  border-radius: 9999px;
+}
+
+.bg-white {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.bg-cover {
+  background-size: cover;
+}
+
+.bg-no-repeat {
+  background-repeat: no-repeat;
+}
+
+.p-6 {
+  padding: 1.5rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.font-\[\] {
+  font-family: ;
+}
+
+.text-\[25px\] {
+  font-size: 25px;
 }
 
 .font-bold {
   font-weight: 700;
 }
 
-.underline {
-  text-decoration-line: underline;
+.font-\[25px\] {
+  font-weight: 25px;
+}
+
+.text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+@media (max-width: 450px) {
+  .max-\[450px\]\:bg-\[url\(\'\.\.\/assets\/home\/background-home-mobile\.jpg\'\)\] {
+    background-image: url('../assets/home/background-home-mobile.jpg');
+  }
+}
+
+@media (min-width: 2px) {
+  .min-\[2px\]\:bg-\[url\(\'\.\.\/assets\/home\/background-home-tablet\.jpg\'\)\] {
+    background-image: url('../assets/home/background-home-tablet.jpg');
+  }
+}
+
+@media (min-width: 450px) {
+  .min-\[450px\]\:bg-\[url\(\'\.\.\/assets\/home\/background-home-tablet\.jpg\'\)\] {
+    background-image: url('../assets/home/background-home-tablet.jpg');
+  }
+}
+
+@media (min-width: 760px) {
+  .min-\[760px\]\:bg-\[url\(\'\.\.\/assets\/home\/background-home-tablet\.jpg\'\)\] {
+    background-image: url('../assets/home/background-home-tablet.jpg');
+  }
+}
+
+@media (min-width: 768px) {
+  .min-\[768px\]\:bg-\[url\(\'\.\.\/assets\/home\/background-home-tablet\.jpg\'\)\] {
+    background-image: url('../assets/home/background-home-tablet.jpg');
+  }
+}
+
+@media (min-width: 1020px) {
+  .min-\[1020px\]\:bg-\[url\(\'\.\.\/assets\/home\/background-home-desktop\.jpg\'\)\] {
+    background-image: url('../assets/home/background-home-desktop.jpg');
+  }
+}
+
+@media (min-width: px) {
+  .min-\[px\]\:bg-\[url\(\'\.\.\/assets\/home\/background-home-tablet\.jpg\'\)\] {
+    background-image: url('../assets/home/background-home-tablet.jpg');
+  }
 }
