@@ -11,37 +11,43 @@
   <title>Frontend Mentor | Space tourism website</title>
 </head>
 <body class=" h-screen min-[1020px]:bg-[url('../assets/home/background-home-desktop.jpg')] min-[450px]:bg-[url('../assets/home/background-home-tablet.jpg')] max-[450px]:bg-[url('../assets/home/background-home-mobile.jpg')] bg-no-repeat bg-cover ">
-  <!-- Navbar -->
-  <div class="flex justify-between items-center p-5 lg:p-14 lg:pl-11 ">
-    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" ><g fill="none" fill-rule="evenodd"><circle cx="24" cy="24" r="24" fill="#FFF"/><path fill="#0B0D17" d="M24 0c0 16-8 24-24 24 15.718.114 23.718 8.114 24 24 0-16 8-24 24-24-16 0-24-8-24-24z"/></g></svg>
-    <div id="collapsibleIcon" class="flex justify-end items-end flex-col relative ">
-
-      <div id="iconContainer" class="sm:invisible">
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="21" ><g fill="#D0D6F9" fill-rule="evenodd"><path d="M0 0h24v3H0zM0 9h24v3H0zM0 18h24v3H0z"/></g></svg>
+    <!-- Navbar -->
+    <div class="flex justify-between items-center p-5 lg:p-14 lg:pl-11 relative">
+      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" ><g fill="none" fill-rule="evenodd"><circle cx="24" cy="24" r="24" fill="#FFF"/><path fill="#0B0D17" d="M24 0c0 16-8 24-24 24 15.718.114 23.718 8.114 24 24 0-16 8-24 24-24-16 0-24-8-24-24z"/></g></svg>
+  
+      <hr class="absolute max-[1024px]:hidden max-[1440px]:left-44 max-[1440px]:w-[500px] max-[1920px]:w-[550px] max-[1920px]:left-52 z-20 opacity-25 ">
+  
+      <div id="collapsibleIcon" class="flex justify-end items-end flex-col relative ">
+  
+        <div id="iconContainer" class="sm:hidden">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="21" ><g fill="#D0D6F9" fill-rule="evenodd"><path d="M0 0h24v3H0zM0 9h24v3H0zM0 18h24v3H0z"/></g></svg>
+        </div>
+        
+        <ul class=" flex flex-col  text-white top-7 right-0 absolute w-[240px] rounded-b-md rounded-tl-md invisible backdrop-blur-md 
+        sm:visible sm:-right-4 sm:-top-11 sm:flex-row sm:bg-[#131522] sm:w-[400px] sm:h-[100px] sm:rounded-none sm:text-center sm:pt-6
+        lg:bg-inherit lg:-top-10 lg:-right-14 lg:h-[80px] lg:w-[800px]  lg:pr-60 lg:pt-4 lg:rounded-none lg:justify-end lg:bg-white lg:bg-opacity-5">
+          <li class="nav_li"><span class="numbers">00</span><a href="index.html"> Home</a></li>
+          <li class="nav_li"><span class="numbers">01</span><a href="#"> Destination</a></li>
+          <li class="nav_li"><span class="numbers">02</span><a href="#"> Crew</a></li>
+          <li class="nav_li"><span class="numbers">03</span><a href="#"> Technology</a></li>
+        </ul>
       </div>
-      
-      <ul class=" flex flex-col  text-white top-7 right-0 absolute w-[240px] rounded-b-md rounded-tl-md invisible backdrop-blur-md 
-      sm:visible sm:-right-4 sm:-top-9 sm:flex-row sm:bg-[#131522] sm:w-[400px] 
-      lg:backdrop-blur-md lg:bg-inherit lg:top-0">
-        <li class="nav_li"><span class="numbers">00</span><a href="index.html"> Home</a></li>
-        <li class="nav_li"><span class="numbers">01</span><a href=""> Destination</a></li>
-        <li class="nav_li"><span class="numbers">02</span><a href=""> Crew</a></li>
-        <li class="nav_li"><span class="numbers">03</span><a href=""> Technology</a></li>
-      </ul>
     </div>
-    
-
-  </div>
-  <!-- Body text -->
-  <div class="text-white text-center grid gap-5 sm:mt-20">
-    <h3 >SO, YOU WANT TO TRAVEL TO</h3>
-    <h1 class="font-[400] text-7xl sm:text-9xl sm:font-[300] ">SPACE</h1>
-    <h5 class=" text-xs leading-6 text-center w-[270px] m-auto sm:w-[395px] sm:mt-4 sm:text-sm sm:leading-7">Let's face it; if you want to go to space, you might as well genuinely go to 
-      outer space and not hover kind of on the edge of it. Well sit back, and relax 
-      because we'll give you a truly out of this world experience!
-    </h5>
-    <h1 class="bg-white text-black w-[150px] h-[150px] pt-12 rounded-full text-center text-[25px] font-[400] m-auto mt-20 sm:w-[230px] sm:h-[230px] sm:mt-48 sm:mb-20 sm:pt-24 sm:text-3xl sm:font-[300]">EXPLORE</h1>
-  </div>
+    <!-- Body text -->
+    <div class=" lg:flex lg:justify-around lg:items-center">
+      <div class="grid gap-5 text-white text-center sm:mt-20 lg:w-[400px] lg:text-left ">
+        <h3 class="lg:tracking-wider">SO, YOU WANT TO TRAVEL TO</h3>
+        <h1 class="font-[400] text-7xl sm:text-9xl sm:font-[300]">SPACE</h1>
+        <h5 class=" text-xs leading-6 text-center w-[270px] m-auto sm:w-[395px] sm:mt-4 sm:text-sm sm:leading-7 lg:text-left  lg:tracking-wider">Let's face it; if you want to go to space, you might as well genuinely go to 
+        outer space and not hover kind of on the edge of it. Well sit back, and relax 
+        because we'll give you a truly out of this world experience!
+        </h5>
+      </div>
+      <div class="">
+        <h1 class="bg-white text-black w-[150px] h-[150px] pt-12 rounded-full text-center text-[25px] font-[400] m-auto mt-20 cursor-pointer
+        sm:w-[230px] sm:h-[230px] sm:mt-48 sm:mb-20 sm:pt-24 sm:text-3xl sm:font-[300] lg:m-0"><a href="#">EXPLORE</a></h1>
+      </div>
+    </div>
   <!-- js files   -->
   <script src="jsCode.js"></script>
 </body>

@@ -6,9 +6,10 @@
     .nav_li{
        @apply p-[30px] border-b-[1px] border-b-gray-600 hover:bg-[#8181816c] hover:cursor-pointer 
        sm:border-0  sm:hover:border-b-2 sm:hover:border-b-white sm:hover:bg-[#131522] sm:px-6 sm:pt-3  sm:text-sm
-       
+       lg:hover:bg-transparent 
     }
     .numbers{
-        @apply sm:invisible
+        @apply sm:hidden
+        lg:inline-block lg:font-bold
     }
 }
