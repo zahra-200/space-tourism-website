@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon-32x32.png">
+  <link href="output.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  
+  <title>Frontend Mentor | Space tourism website</title>
+</head>
+<body class=" h-screen min-[1020px]:bg-[url('../assets/destination/background-destination-desktop.jpg')] min-[450px]:bg-[url('../assets/destination/background-destination-tablet.jpg')] max-[450px]:bg-[url('../assets/destination/background-destination-mobile.jpg')] bg-no-repeat bg-cover ">
+
+  <!-- Navbar -->
+  <div class="flex justify-between items-center p-5 lg:p-14 lg:pl-11 relative">
+    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" ><g fill="none" fill-rule="evenodd"><circle cx="24" cy="24" r="24" fill="#FFF"/><path fill="#0B0D17" d="M24 0c0 16-8 24-24 24 15.718.114 23.718 8.114 24 24 0-16 8-24 24-24-16 0-24-8-24-24z"/></g></svg>
+
+    <hr class="absolute max-[1024px]:hidden max-[1440px]:left-44 max-[1440px]:w-[500px] max-[1920px]:w-[550px] max-[1920px]:left-52 z-20 opacity-25 ">
+
+    <div id="collapsibleIcon" class="flex justify-end items-end flex-col relative ">
+
+      <div id="iconContainer" class="sm:hidden">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="21" ><g fill="#D0D6F9" fill-rule="evenodd"><path d="M0 0h24v3H0zM0 9h24v3H0zM0 18h24v3H0z"/></g></svg>
+      </div>
+      
+      <ul class=" flex flex-col  text-white top-7 right-0 absolute w-[240px] rounded-b-md rounded-tl-md invisible backdrop-blur-md 
+      sm:visible sm:-right-4 sm:-top-11 sm:flex-row sm:bg-[#131522] sm:w-[400px] sm:h-[100px] sm:rounded-none sm:text-center sm:pt-6
+      lg:bg-inherit lg:-top-10 lg:-right-14 lg:h-[80px] lg:w-[800px]  lg:pr-60 lg:pt-4 lg:rounded-none lg:justify-end lg:bg-white lg:bg-opacity-5">
+      <a href="index.html" class="nav_li"><li><span class="numbers">00</span> Home</li></a>
+      <a href="destination-mars.html" class="nav_li border-b-2 border-b-white"><li><span class="numbers">01</span> Destination</li></a>
+      <a href="crew-engineer.html" class="nav_li"><li><span class="numbers">02</span> Crew</li></a>
+      <a href="technology-vehicle.html" class="nav_li"><li><span class="numbers">03</span> Technology</li></a>
+      </ul>
+    </div>
+  </div>
+
+  <!-- body Text -->
+  
+  <div class="container text-white flex flex-col justify-center items-center">
+    <div id="img-container" class="grid justify-items-center gap-5">
+      <p>01 Pick your destination</p>
+      <img src="../assets/destination/image-moon.png"  width="50%" height="50%" id="img">
+    </div>
+    <div id="info-container" class="pt-5">
+      <div id="innerNav">
+        <ul class="flex justify-around items-center px-5">
+          <li class="destination-li border-b-2 border-b-white">Moon</li>
+          <li class="destination-li">Mars</li>
+          <li class="destination-li">Europa</li>
+          <li class="destination-li">Titan</li>
+        </ul>
+      </div>
+    
+      <div class="grid justify-items-center gap-4 pt-5">
+        <p id="titleName" class=" text-7xl">Moon</p>
+    
+        <p class="text-center text-xs px-5 leading-6 w-[320px] font-[300]">
+          See our planet as you've never seen it before. A perfect relaxing trip away to help regain perspective and come back refreshed. While you're there, take in some history by visiting the Luna 2 and Apollo 11 landing sites.
+        </p>
+
+      </div>
+      <hr class="w-[90%] m-auto mt-4 opacity-25">
+      <div class=" m-auto text-center">
+        
+        <p class="text-xs leading-8 uppercase pt-3">
+          Avg. distance <br>
+          <span class="text-2xl" id="aveNum">384,400 km</span>
+        </p>
+        <p class="text-xs leading-8 uppercase pt-3" >
+          Est. travel time <br>
+          <span class="text-2xl" id="estTime">3 days</span>
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- js files   -->
+  <script src="jsCode.js"></script>
+</body>
+</html>
