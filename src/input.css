@@ -5,7 +5,7 @@
 @layer components{
     /* Home page */
     .nav_li{
-       @apply p-[30px] border-b-[1px] border-b-gray-600 hover:bg-[#8181816c] hover:cursor-pointer 
+       @apply p-[30px] border-b-[1px] border-b-gray-600 hover:bg-[#8181816c] hover:cursor-pointer tracking-widest
        sm:border-0  sm:hover:border-b-2 sm:hover:border-b-white  sm:hover:bg-[#131522] sm:px-6 sm:pt-3  sm:text-sm
        lg:hover:bg-transparent 
     }
@@ -15,6 +15,6 @@
     }
     /* Destination Page */
     .destination-li{
-        @apply cursor-pointer
+        @apply cursor-pointer lg:mr-7 lg:text-sm lg:pb-2
     }
 }

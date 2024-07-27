@@ -16,7 +16,7 @@
   <div class="flex justify-between items-center p-5 lg:p-14 lg:pl-11 relative">
     <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" ><g fill="none" fill-rule="evenodd"><circle cx="24" cy="24" r="24" fill="#FFF"/><path fill="#0B0D17" d="M24 0c0 16-8 24-24 24 15.718.114 23.718 8.114 24 24 0-16 8-24 24-24-16 0-24-8-24-24z"/></g></svg>
 
-    <hr class="absolute max-[1024px]:hidden max-[1440px]:left-44 max-[1440px]:w-[500px] max-[1920px]:w-[550px] max-[1920px]:left-52 z-20 opacity-25 ">
+    <hr class="absolute max-[1024px]:hidden max-[1440px]:left-44 max-[1440px]:w-[500px] max-[1920px]:w-[550px] max-[1920px]:left-48 z-20 opacity-25 ">
 
     <div id="collapsibleIcon" class="flex justify-end items-end flex-col relative ">
 
@@ -28,7 +28,7 @@
       sm:visible sm:-right-4 sm:-top-11 sm:flex-row sm:bg-[#131522] sm:w-[400px] sm:h-[100px] sm:rounded-none sm:text-center sm:pt-6
       lg:bg-inherit lg:-top-10 lg:-right-14 lg:h-[80px] lg:w-[800px]  lg:pr-60 lg:pt-4 lg:rounded-none lg:justify-end lg:bg-white lg:bg-opacity-5">
       <a href="index.html" class="nav_li"><li><span class="numbers">00</span> Home</li></a>
-      <a href="destination-mars.html" class="nav_li border-b-2 border-b-white"><li><span class="numbers">01</span> Destination</li></a>
+      <a href="destinations.html" class="nav_li border-b-2 border-b-white"><li><span class="numbers">01</span> Destination</li></a>
       <a href="crew-engineer.html" class="nav_li"><li><span class="numbers">02</span> Crew</li></a>
       <a href="technology-vehicle.html" class="nav_li"><li><span class="numbers">03</span> Technology</li></a>
       </ul>
@@ -37,14 +37,14 @@
 
   <!-- body Text -->
   
-  <div class="container text-white flex flex-col justify-center items-center">
-    <div id="img-container" class="grid justify-items-center gap-5">
-      <p>01 Pick your destination</p>
+  <div class="container text-white flex flex-col justify-center items-center w-full lg:flex-row lg:pb-28">
+    <div id="img-container" class="grid justify-items-center gap-5 w-11/12 sm:pt-4 lg:w-[60%] lg:p-0 ">
+      <p class="uppercase sm:justify-self-start lg:text-xl tracking-widest lg:pl-32 lg:pb-6"><span class="opacity-40">01 </span> Pick your destination</p>
       <img src="../assets/destination/image-moon.png"  width="50%" height="50%" id="img">
     </div>
-    <div id="info-container" class="pt-5">
-      <div id="innerNav">
-        <ul class="flex justify-around items-center px-5">
+    <div id="info-container" class="pt-5 sm:w-full lg:w-[40%]  lg:px-0 lg:pt-14 lg:flex lg:flex-col lg:justify-start lg:items-start">
+      <div id="innerNav" class="sm:w-1/2 m-auto lg:w-full lg:m-0 ">
+        <ul class="flex justify-around items-center px-5 lg:items-start lg:justify-start lg:p-0 ">
           <li class="destination-li border-b-2 border-b-white">Moon</li>
           <li class="destination-li">Mars</li>
           <li class="destination-li">Europa</li>
@@ -52,22 +52,22 @@
         </ul>
       </div>
     
-      <div class="grid justify-items-center gap-4 pt-5">
-        <p id="titleName" class=" text-7xl">Moon</p>
+      <div class="grid justify-items-center gap-4 pt-5 w-full lg:justify-items-start">
+        <p id="titleName" class=" text-7xl lg:font-[300] uppercase">Moon</p>
     
-        <p class="text-center text-xs px-5 leading-6 w-[320px] font-[300]">
+        <p class="text-center text-xs px-5 leading-6 w-[320px] font-[300] sm:w-1/2 lg:w-[93%] lg:m-0 lg:text-left lg:p-0 tracking-widest" >
           See our planet as you've never seen it before. A perfect relaxing trip away to help regain perspective and come back refreshed. While you're there, take in some history by visiting the Luna 2 and Apollo 11 landing sites.
         </p>
 
       </div>
-      <hr class="w-[90%] m-auto mt-4 opacity-25">
-      <div class=" m-auto text-center">
+      <hr class="w-[90%] m-auto mt-4 opacity-25 lg:mx-0 lg:w-[80%] lg:mt-12">
+      <div class=" m-auto text-center p-5 sm:flex sm:justify-around sm:p-8 lg:w-full lg:m-0 lg:px-0 lg:justify-start lg:text-left ">
         
-        <p class="text-xs leading-8 uppercase pt-3">
+        <p class="text-xs leading-5 uppercase lg:mr-16 tracking-widest">
           Avg. distance <br>
           <span class="text-2xl" id="aveNum">384,400 km</span>
         </p>
-        <p class="text-xs leading-8 uppercase pt-3" >
+        <p class="text-xs leading-5 uppercase pt-3 lg:p-0 tracking-widest" >
           Est. travel time <br>
           <span class="text-2xl" id="estTime">3 days</span>
         </p>
