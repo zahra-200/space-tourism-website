@@ -15,6 +15,10 @@
     }
     /* Destination Page */
     .destination-li{
-        @apply cursor-pointer lg:mr-7 lg:text-sm lg:pb-2
+        @apply cursor-pointer sm:hover:border-b-2 sm:hover:border-b-white lg:mr-7 lg:text-sm lg:pb-2 
+    }
+    /* crws page */
+    .dots{
+        @apply w-2 h-w-2 bg-gray-500 rounded-full bg-opacity-50 hover:bg-white cursor-pointer
     }
 }
