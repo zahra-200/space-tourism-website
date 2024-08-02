@@ -16,6 +16,7 @@ fetch('./data.json')
 .then((response)=>{return response.json()})
 .then((get)=>{
     let result = get.technology;
+    
     btnContainer.addEventListener('click' , (event)=>{
         let target = event.target.id ;
         for(var i = 0 ; i < result.length ; i++){
@@ -33,7 +34,9 @@ fetch('./data.json')
             }
         }
     })
+    
 })
+
 function removeClass(){
     for(var i = 0 ; i < techBtn.length ; i++){
         techBtn[i].classList.remove('bg-white');

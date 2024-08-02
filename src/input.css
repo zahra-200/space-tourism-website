@@ -23,6 +23,7 @@
     }
     /* Technology page */
     .technology-btn{
-        @apply w-9 h-9 p-1  rounded-full border-2 border-white border-opacity-25 text-opacity-90 text-white text-center cursor-pointer font-[500] hover:bg-white hover:text-black
+        @apply w-9 h-9 p-1  rounded-full border-2 border-white border-opacity-25 text-opacity-90 text-white text-center cursor-pointer font-[500] hover:bg-white hover:text-black font-['Gothic_A1']
+        lg:w-14 lg:h-14 lg:p-3 lg:text-2xl lg:font-[300]
     }
 }
