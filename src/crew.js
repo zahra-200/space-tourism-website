@@ -11,7 +11,7 @@ fetch('./data.json')
 .then((response)=>{return response.json()})
 .then((get)=>{
     let result = get.crew ;
-    dots.addEventListener('click' , (event)=>{
+    dots.addEventListener('mouseover' , (event)=>{
         for(var i = 0 ; i < result.length ; i++){
             if(event.target.id == i + 1  ){
                 crewName.innerHTML = result[i].name;

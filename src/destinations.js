@@ -16,7 +16,7 @@ fetch('./data.json')
 .then((result)=>{
     let temp = result.destinations;
     for (const t of temp) {
-        innerNav.addEventListener('click' , (event)=>{
+        innerNav.addEventListener('mouseover' , (event)=>{
             if( event.target.innerHTML == t.name ){
                 titleName.innerHTML = t.name;
                 content.innerHTML = t.description;

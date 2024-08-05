@@ -10,14 +10,13 @@ const techName = document.getElementById('name');
 const techDesc = document.getElementById('description');
 const img1 = document.getElementById('img1');
 const img2 = document.getElementById('img2');
-let value = 769;
+let value = 1020;
 
 fetch('./data.json')
 .then((response)=>{return response.json()})
 .then((get)=>{
     let result = get.technology;
-    
-    btnContainer.addEventListener('click' , (event)=>{
+    btnContainer.addEventListener('mouseover' , (event)=>{
         let target = event.target.id ;
         for(var i = 0 ; i < result.length ; i++){
             if(target == i + 1){
